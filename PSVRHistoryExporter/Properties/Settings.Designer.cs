@@ -8,22 +8,67 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace PSVRHistoryExporter.Properties
-{
-
-
+namespace PSVRHistoryExporter.Properties {
+    
+    
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "11.0.0.0")]
-    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase
-    {
-
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "15.9.0.0")]
+    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
+        
         private static Settings defaultInstance = ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())));
-
-        public static Settings Default
-        {
-            get
-            {
+        
+        public static Settings Default {
+            get {
                 return defaultInstance;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("2000-01-01")]
+        public global::System.DateTime LastConvertedHandTime {
+            get {
+                return ((global::System.DateTime)(this["LastConvertedHandTime"]));
+            }
+            set {
+                this["LastConvertedHandTime"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int LastIdUsed {
+            get {
+                return ((int)(this["LastIdUsed"]));
+            }
+            set {
+                this["LastIdUsed"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("D:\\OculusLibrary\\Software\\luckyvr-inc-pokerstars-vr\\PokerStarsVR_Data\\StreamingAs" +
+            "sets\\MatchLog.txt")]
+        public string MatchLogFilePath {
+            get {
+                return ((string)(this["MatchLogFilePath"]));
+            }
+            set {
+                this["MatchLogFilePath"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string ExportDirPath {
+            get {
+                return ((string)(this["ExportDirPath"]));
+            }
+            set {
+                this["ExportDirPath"] = value;
             }
         }
     }

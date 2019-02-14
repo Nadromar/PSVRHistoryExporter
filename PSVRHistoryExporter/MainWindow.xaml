@@ -5,8 +5,26 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PSVRHistoryExporter"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+        Title="MainWindow" Height="450" Width="800" Loaded="Window_Loaded">
+    <StackPanel Orientation="Vertical">
+        <StackPanel Orientation="Horizontal">
+            <Label Content="Path to MatchLog.txt:" Width="150" Margin="5"/>
+            <TextBox Width="400" Margin="5" Name="matchLogPathTxt"/>
+            <Button Name="browseMatchLogBtn" Content="Browse" Width="75" Margin="5" Click="BrowseMatchLogBtn_Click" IsEnabled="False"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Label Content="Export Folder:" Width="150" Margin="5"/>
+            <TextBox Width="400" Margin="5" Name="exportDirTxt"/>
+            <Button Name="browseExportfolderBtn" Content="Browse" Width="75" Margin="5" Click="BrowseExportfolderBtn_Click" IsEnabled="False"/>
+        </StackPanel>
+        <TextBlock>
+            Instruction: <LineBreak/>
+            1. Set the path to MatchLog.txt - You can find this in your PSVR Installation folder\PokerStarsVR_Data\StreamingAssets\MatchLog.txt<LineBreak/>
+            2. Set the export folder to any new directory where you want the new hand history files to end up. (default is fine)<LineBreak/>
+            3. In HoldemManager or Pokertracker - add the Export Folder as an import folder for PokerStars.<LineBreak/>
+            4. Press Start below - you can leave the program running during a PSVR session or close it and run it again when you have new hands.
+        </TextBlock>
+        <Button Content="Start Importing" Margin="5" Click="Button_Click" Name="startStopBtn"/>
+        <TextBlock><Run Text=" "/></TextBlock>
+    </StackPanel>
 </Window>

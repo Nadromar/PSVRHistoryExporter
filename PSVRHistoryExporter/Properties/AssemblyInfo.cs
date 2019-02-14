@@ -10,9 +10,9 @@ using System.Windows;
 [assembly: AssemblyTitle("PSVRHistoryExporter")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Nadromar")]
 [assembly: AssemblyProduct("PSVRHistoryExporter")]
-[assembly: AssemblyCopyright("Copyright ©  2019")]
+[assembly: AssemblyCopyright("Copyright © Nadromar 2019")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
